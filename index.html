@@ -8,151 +8,82 @@
 				margin: 0;
 				padding: 0;
 			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
 			body{
-				background: url(img/2.jpg) no-repeat;
-				background-size:100%;
+				background: url(img/bg2.jpg) no-repeat;
+				background-size: 100%;
 			}
-			@keyframes zhuan{
-				from{
-					transform: rotate(0deg);
+			
+			div{
+				width: 280px;
+				height: 400px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+				transform-style: preserve-3d;
+				animation: play 60s linear infinite;
+			}
+			div img{
+				width: 280px;
+				height: 400px;
+				position:absolute;
+			}
+			div img:nth-child(1){transform: rotateY(0deg) translatez(650px);}
+			div img:nth-child(2){transform: rotateY(36deg) translatez(650px);}
+			div img:nth-child(3){transform: rotateY(72deg) translatez(650px);}
+			div img:nth-child(4){transform: rotateY(108deg) translatez(650px);}
+			div img:nth-child(5){transform: rotateY(144deg) translatez(650px);}
+			div img:nth-child(6){transform: rotateY(180deg) translatez(650px);}
+			div img:nth-child(7){transform: rotateY(216deg) translatez(650px);}
+			div img:nth-child(8){transform: rotateY(252deg) translatez(650px);}
+			div img:nth-child(9){transform: rotateY(288deg) translatez(650px);}
+			div img:nth-child(10){transform: rotateY(324deg) translatez(650px);}
+			
+			
+			
+			@keyframes play{
+				0%{
+					transform: rotateX(0deg) rotateY(0deg);
 				}
-				to{
-					transform: rotate(360deg);
+				25%{
+					transform: rotateX(20deg) rotateY(180deg);
+				}
+				50%{
+					transform: rotateX(0deg) rotateY(360deg);
+				}
+				75%{
+					transform: rotateX(-20deg) rotateY(540deg);
+				}
+				100%{
+					transform: rotateX(0deg) rotateY(720deg);
 				}
 			}
-			div:nth-child(1){
-				width: 768px;
-				height: 768px;
-				position: absolute;
-				left:50%;
-				margin-left: -384px;
-				background: url(img/fsw.png);
-				animation: zhuan 10s linear infinite;
-			}
-			div:nth-child(2){
-				width: 246px;
-				height: 490px;
-				position: absolute;
-				left: 50%;
-				margin-left: -123px;
-				top: 384px;
-				background: url(img/bracketsmall.png);
-				z-index: -1;
-			}
-			div:nth-child(3){
-				width:358px;
-				height: 529px;
-				position: absolute;
-				left: 50%;
-				margin-left: -183px;
-				top: 371px;
-				background: url(img/bracket.png);
-			}
-			div:nth-child(4){
-				width: 577px;
-				height: 257px;
-				position: absolute;
-				left:50%;
-				margin-left: -288px;
-				top:262px;
-				background: url(img/big-title.png);
-			}
-			div:nth-child(5){
-				width: 413px;
-				height: 139px;
-				position: absolute;
-				left: 50%;
-				margin-left: -206px;
-				top: 455px;
-				background: url(img/title.png);
-			}
-			
-			div:nth-child(6){
-				width: 48px;
-				height: 64px;
-				position: absolute;
-				left: 50%;
-				margin-left: -24px;
-				top:542px;
-				background: url(img/arrow.png);
-			}
-			
-			li{
-				width:130px;
-				height: 170px;
-				position: absolute;
-				list-style: none;
-				animation: ren 10s linear infinite;
-				
-			}
-			li:nth-child(1){
-				background: url(img/girl.png);
-				left: 55px;
-				top:100px;
-			}
-			li:nth-child(2){
-				background: url(img/girls.png);
-				left: 340px;
-				top:-20px;
-			}
-			li:nth-child(3){
-				background: url(img/dog.png);
-				left: 580px;
-				top:85px;
-			}
-			li:nth-child(4){
-				background: url(img/boy.png);
-				left: 665px;
-				top:350px;
-			}
-			li:nth-child(5){
-				background: url(img/mimi.png);
-				left: 0px;
-				top:350px;
-			}
-			li:nth-child(6){
-				background: url(img/mudog.png);
-				left: 90px;
-				top:580px;
-			}
-			li:nth-child(7){
-				background: url(img/hairboy.png);
-				left: 590px;
-				top:540px;
-			}
-			li:nth-child(8){
-				background: url(img/shamegirl.png);
-				left: 327px;
-				top:685px;
-			}
-			
-			@keyframes ren{
-				from{transform: rotate(0deg);}
-				to{transform: rotate(-360deg);}
-			}
 			
 			
-		</style>
-		
+			
+		</style>	
 		
 	</head>
 	<body>
 		<div>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<img src="img/pic1.jpg" />
+			<img src="img/pic2.png" />
+			<img src="img/pic3.png" />
+			<img src="img/pic4.png" />
+			<img src="img/pic5.jpg" />
+			<img src="img/pic6.png" />
+			<img src="img/pic7.png" />
+			<img src="img/pic8.png" />
+			<img src="img/pic9.png" />
+			<img src="img/pic10.png" />
 		</div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
+		<audio src="raw/aaaaa.mp3" autoplay="autoplay"></audio>
+		<img src="img/a.gif" />
 	</body>
 </html>
